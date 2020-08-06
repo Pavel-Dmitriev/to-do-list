@@ -1,0 +1,134 @@
+/*@import "roboto.css";*/
+/*@import "~normalize.css";*/
+
+/*@font-face {*/
+/*    font-family: 'Roboto';*/
+/*    src: url("./fonts/Roboto-Regular.ttf") format('truetype');*/
+/*}*/
+
+html, body {
+    font-size: 18px;
+    background: #E0E0E0;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background: #56CCF2;
+    max-width: 520px;
+    min-height: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(50% - 85px);
+    left: 0;
+    right: 0;
+    margin: 0 auto 20px;
+}
+
+.margin-container {
+    width: 100%;
+    height: 100%;
+    margin: 18px;
+}
+
+.title {
+    width: 100%;
+    font-size: 36px;
+    margin: 9px 0 27px;
+    color: #4F4F4F;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.entry-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-task {
+    font-size: 18px;
+    border: 0;
+    border-radius: 35px;
+    width: 318px;
+    height: 63px;
+    padding-left: 18px;
+    color: #828282;
+}
+
+.input-task:focus {
+    outline: none;
+}
+
+.input-task::placeholder {
+    color: #828282;
+}
+
+.btn-add {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 128px;
+    height: 65px;
+    padding: 22px;
+    border: 0;
+    border-radius: 35px;
+    background: #27AE60;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333333;
+}
+
+.btn-add:hover {
+    transition: 0.3s;
+    background: #3cbd73;
+}
+
+.btn-add:focus {
+    outline: none;
+}
+
+.to-do-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #4F4F4F;
+}
+
+.list {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    height: 64px;
+    margin-top: 16px;
+    padding: 0 18px;
+    color: #4F4F4F;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.icon-delete {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: url("img/mdi_delete.png") no-repeat center transparent;
+    background-size: contain;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Перечеркнутый текст */
+.done {
+    text-decoration: line-through;
+}
